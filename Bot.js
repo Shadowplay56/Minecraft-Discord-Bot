@@ -17,10 +17,11 @@ const RCON_HOST = config.rcon.host;
 const RCON_PORT = parseInt(config.rcon.port);
 const RCON_PASSWORD = config.rcon.password;
 
-const DEBUG_MODE = config.general.debug_mode;
+const DEBUG = DEBUG_MODE = config.general.debug_mode;
 
 console.log('Debug mode is:', config.general.debug_mode);
-console.log('Config loaded:', config);  // !!IMPORTANT!! THIS WILL LOAD THE ENTIRE CONTENT OF THE config.ini FILE INTO THE CONSOLE.
+if (DEBUG)
+  console.log('Config loaded:', config);  // !!IMPORTANT!! THIS WILL LOAD THE ENTIRE CONTENT OF THE config.ini FILE INTO THE CONSOLE.
                                         // THAT MEANS IT WILL ALSO PRINT YOUR BOT TOKEN IN PLAIN TEXT INO THE CONSOLE
                                         // MALICIOUS ACTORS CAN COMPROMISE YOUR BOT WITH THIS TOKEN. DON'T SHOW THE CONSOLE, OR WHERERVER YOU RAN THIS SCRIPT IN A STREAM/VIDEO
                                         // ALTERNATIVELY DELET THIS LINE, IT'S ONLY THERE TO SHOW YOU WHAT IT LOADED OR TRIED TO LOAD
@@ -190,7 +191,7 @@ function startActivityMonitor() {
 
 // Sends RCON Commands
 function sendRcon(cmd, interaction, prefix = "✅ Command sent.") {
-  const rcon = new Rcon(RCON_CONFIG.host, RCON_CONFIG.port, RCON_CONFIG.password);
+  const rcon = new Rcon(config.rcon.host, config.rcon.port, config.rcon.password);
   rcon.on("auth", () => rcon.send(cmd))
     .on("response", (res) => {
       rcon.disconnect();
