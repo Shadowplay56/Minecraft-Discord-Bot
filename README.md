@@ -37,15 +37,17 @@ Before setting up the bot, ensure you have:
 
 1. **Clone or download** the bot files to your server directory
 
-2. **Install dependencies**:
+2. **Download [Node.js](https://nodejs.org/en)**
 
-   npm install discord.js ini rcon
+3. **Install dependencies**:
 
-3. **Configure the bot** by editing `config.ini` (see Configuration section)
+   `npm install discord.js ini rcon`
 
-4. **Run the bot**:
+4. **Configure the bot** by editing `config.ini` (see Configuration section)
 
-   node Bot.js
+5. **Run the bot**:
+
+   `node Bot.js`
 
 ## Configuration
 
