@@ -247,4 +247,10 @@ If you encounter issues:
 
 ## License
 
-This project is provided as-is for commercial, educational and personal use. Please respect Discord's Terms of Service and API rate limits when using this bot. RedLabs Developement is not reponsible for moderative actions taken against your account due to a modification of this bot. The bot is provided Open-Source and free of charge for transparency as It is not yet verified.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
